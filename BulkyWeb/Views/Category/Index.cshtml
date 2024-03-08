@@ -1,6 +1,21 @@
-﻿<h1>hi</h1>
-@*
+﻿@model List<Category>
+<h1>hi</h1>
 
-    *@
-@{
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            cat
+        </div>
+        <div class="col-6">
+            <a asp-controller="Category" asp-action="Create" class="btn-danger">
+                create new Cat
+            </a>
+
+        </div>
+    </div>
+</div>
+
+@foreach (var obj in Model)
+{
+    <div>@obj.Name</div>
 }

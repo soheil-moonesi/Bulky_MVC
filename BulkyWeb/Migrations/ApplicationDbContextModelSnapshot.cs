@@ -58,6 +58,12 @@ namespace BulkyWeb.Migrations
                             Id = 3,
                             DisplayOrder = 3,
                             Name = "History"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            DisplayOrder = 4,
+                            Name = "Doc"
                         });
                 });
 #pragma warning restore 612, 618
